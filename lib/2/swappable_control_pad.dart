@@ -38,7 +38,7 @@ class SecondControlPad extends StatelessWidget {
                   PadButton(
                     text: "X",
                     color: const Color.fromRGBO(31, 76, 157, 1),
-                    onPressed: yCommand.execute,
+                    onPressed: xCommand.execute,
                   )
                 ],
               ),
