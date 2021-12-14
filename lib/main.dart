@@ -1,4 +1,4 @@
-import 'package:command_pattern/1/wired_main_screen.dart';
+import 'package:command_pattern/4/replayable_main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FirstMainScreen(),
+      // home: FirstMainScreen(),
+      // home: const SecondMainScreen(),
+      // home: const ThirddMainScreen(),
+      home: const FourthMainScreen(),
     );
   }
 }
