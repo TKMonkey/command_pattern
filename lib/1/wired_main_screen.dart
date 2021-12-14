@@ -2,13 +2,13 @@ import 'package:command_pattern/1/wired_control_pad.dart';
 import 'package:flutter/material.dart';
 
 class FirstMainScreen extends StatefulWidget {
-  FirstMainScreen({Key? key}) : super(key: key);
+  const FirstMainScreen({Key? key}) : super(key: key);
 
   @override
-  State<FirstMainScreen> createState() => _MainScreenState();
+  State<FirstMainScreen> createState() => _FirstMainScreenState();
 }
 
-class _MainScreenState extends State<FirstMainScreen> {
+class _FirstMainScreenState extends State<FirstMainScreen> {
   String text = '';
   @override
   Widget build(BuildContext context) {
