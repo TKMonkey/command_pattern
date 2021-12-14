@@ -22,17 +22,13 @@ class FirstControlPad extends StatelessWidget {
                   PadButton(
                     text: "Y",
                     color: const Color.fromRGBO(63, 141, 110, 1),
-                    onPressed: () {
-                      printer("Disparar");
-                    },
+                    onPressed: _shoot,
                   ),
                   buttonsSpace,
                   PadButton(
                     text: "X",
                     color: const Color.fromRGBO(31, 76, 157, 1),
-                    onPressed: () {
-                      printer("Cambiar Arma");
-                    },
+                    onPressed: _swapWeapon,
                   )
                 ],
               ),
@@ -42,17 +38,13 @@ class FirstControlPad extends StatelessWidget {
                   PadButton(
                     text: "B",
                     color: const Color.fromRGBO(205, 176, 64, 1),
-                    onPressed: () {
-                      printer("Saltar");
-                    },
+                    onPressed: _jump,
                   ),
                   buttonsSpace,
                   PadButton(
                     text: "A",
                     color: const Color.fromRGBO(212, 54, 46, 1),
-                    onPressed: () {
-                      printer("Agacharse");
-                    },
+                    onPressed: _duck,
                   ),
                 ],
               ),
@@ -60,6 +52,22 @@ class FirstControlPad extends StatelessWidget {
           ),
         ),
       );
+
+  void _shoot() {
+    printer("Disparar");
+  }
+
+  void _swapWeapon() {
+    printer("Cambiar Arma");
+  }
+
+  void _jump() {
+    printer("Saltar");
+  }
+
+  void _duck() {
+    printer("Agacharse");
+  }
 }
 
 class PadButton extends StatelessWidget {
