@@ -1,4 +1,4 @@
-import 'package:command_pattern/a_main_screen.dart';
+import 'package:command_pattern/1/wired_main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

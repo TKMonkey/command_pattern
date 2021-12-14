@@ -84,7 +84,12 @@ class PadButton extends StatelessWidget {
         color: color,
         child: Transform.rotate(
           angle: eighthRotation,
-          child: Text(text),
+          child: Text(
+            text,
+            style: const TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ),
         onPressed: onPressed,
       ),

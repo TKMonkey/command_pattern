@@ -1,4 +1,4 @@
-import 'package:command_pattern/a_control_pad.dart';
+import 'package:command_pattern/1/wired_control_pad.dart';
 import 'package:flutter/material.dart';
 
 class FirstMainScreen extends StatefulWidget {
