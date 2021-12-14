@@ -34,8 +34,8 @@ class _ThirdScreenState extends State<ThirdMainScreen> {
 
     aCommand = DuckCommand(printer);
     bCommand = JumpCommand(printer);
-    xCommand = ShootCommand(printer);
-    yCommand = SwapWeaponCommand(printer);
+    xCommand = SwapWeaponCommand(printer);
+    yCommand = ShootCommand(printer);
   }
 
   @override
