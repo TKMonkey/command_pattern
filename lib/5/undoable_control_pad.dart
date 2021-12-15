@@ -97,7 +97,7 @@ class _FifthControlPadState extends State<FifthControlPad> {
               ),
               TextButton(
                   onPressed: currentIndex < playedActions.length - 1
-                      ? () async {
+                      ? () {
                           _redoAction();
                         }
                       : null,
@@ -114,17 +114,23 @@ class _FifthControlPadState extends State<FifthControlPad> {
     command.execute();
     playedActions.removeRange(currentIndex + 1, playedActions.length);
     playedActions.add(command);
-    currentIndex++;
+    setState(() {
+      currentIndex++;
+    });
   }
 
   void _undoAction() {
     final command = playedActions.elementAt(currentIndex);
-    currentIndex--;
+    setState(() {
+      currentIndex--;
+    });
     command.undo();
   }
 
   void _redoAction() {
-    currentIndex++;
+    setState(() {
+      currentIndex++;
+    });
     final command = playedActions.elementAt(currentIndex);
     command.execute();
   }
