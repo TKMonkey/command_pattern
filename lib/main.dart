@@ -1,4 +1,4 @@
-import 'package:command_pattern/4/replayable_main_screen.dart';
+import 'package:command_pattern/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       // home: FirstMainScreen(),
       // home: const SecondMainScreen(),
       // home: const ThirddMainScreen(),
-      home: const FourthMainScreen(),
+      // home: const FourthMainScreen(),
+      home: const HomeScreen(),
     );
   }
 }
