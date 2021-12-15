@@ -88,23 +88,29 @@ class _FourthControlPadState extends State<FourthControlPad> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               TextButton(
-                onPressed: () {
-                  playedActions.clear();
-                },
+                onPressed: playedActions.isEmpty
+                    ? null
+                    : () {
+                        setState(() {
+                          playedActions.clear();
+                        });
+                      },
                 child: const Text(
                   "Vaciar",
                   style: TextStyle(fontSize: 20),
                 ),
               ),
               TextButton(
-                  onPressed: () async {
-                    for (var action in playedActions) {
-                      action.execute();
-                      await Future.delayed(
-                        const Duration(seconds: 1),
-                      );
-                    }
-                  },
+                  onPressed: playedActions.isEmpty
+                      ? null
+                      : () async {
+                          for (var action in playedActions) {
+                            action.execute();
+                            await Future.delayed(
+                              const Duration(seconds: 1),
+                            );
+                          }
+                        },
                   child: const Text(
                     "Replay",
                     style: TextStyle(fontSize: 20),
