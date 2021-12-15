@@ -14,7 +14,7 @@ class _FirstMainScreenState extends State<FirstMainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Control Pad 1"),
+        title: const Text("Hard-wired Command"),
       ),
       body: Center(
         child: Column(

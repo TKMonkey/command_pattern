@@ -42,7 +42,7 @@ class _ThirdScreenState extends State<ThirdMainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Control Pad 3"),
+        title: const Text("Swappable Actor Command"),
       ),
       body: Center(
         child: Column(

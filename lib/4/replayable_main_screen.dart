@@ -42,7 +42,7 @@ class _FourthScreenState extends State<FourthMainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Control Pad 4"),
+        title: const Text("Replayable Command"),
       ),
       body: Center(
         child: Column(

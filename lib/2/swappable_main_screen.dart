@@ -42,7 +42,7 @@ class _SecondScreenState extends State<SecondMainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Control Pad 2"),
+        title: const Text("Swappable Command"),
       ),
       body: Center(
         child: Column(
